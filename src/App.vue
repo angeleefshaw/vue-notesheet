@@ -2,17 +2,20 @@
   <div id="app">
   <h1>Vue Framework Notesheet</h1>
   <span> Follow along to learn more about how the Vue framework works.</span>
-  <TemplateSyntax msg="Template Syntax"/>
+  <TemplateSyntax class="m-5" msg="Template Syntax"/>
+  <ComputedAndWatchers class="m-5" msg="Computed Properties and Watchers"/>
   </div>
 </template>
 
 <script>
 import TemplateSyntax from './components/TemplateSyntax.vue'
+import ComputedAndWatchers from './components/ComputedAndWatchers.vue'
 
 export default {
   name: 'App',
   components: {
-    TemplateSyntax
+    TemplateSyntax,
+    ComputedAndWatchers
   }
 }
 </script>
