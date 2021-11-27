@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Vue Framework Notesheet</h1>
+  <span> Follow along to learn more about how the Vue framework works.</span>
+  <TemplateSyntax msg="Template Syntax"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TemplateSyntax from './components/TemplateSyntax.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TemplateSyntax
   }
 }
 </script>
