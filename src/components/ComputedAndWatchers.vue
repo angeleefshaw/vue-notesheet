@@ -4,10 +4,10 @@
         <ol>
             <li>For long expressions, use computed properties. This text has been reversed using a computed property <b>{{ computedSentence }}</b></li>
         </ol>
-        <p>So what is the difference between computed properties, watchers, and methods?</p>
-        <ol v-for="item in vueExpressions" :key="item.name">
+        <p>So what is the difference between computed <span>properties, watchers, and methods</span>?</p>
+        <ul v-for="item in vueExpressions" :key="item.name">
             <li>{{ item['name'] }} : {{ item['description']}}</li>
-        </ol>
+        </ul>
         <a :href="href">Learn More</a>
     </div>
 </template>
@@ -48,12 +48,10 @@ export default {
 </script>
 
 <style scoped>
-ol {
-    list-style: none;
-}
 a {
   color: #42b983;
 }
-
-    
+span {
+  font-style: italic;
+}
 </style>
